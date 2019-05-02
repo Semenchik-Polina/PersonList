@@ -39,7 +39,7 @@ class SignInViewController: UIViewController {
             if (nameSurname.elementsEqual(user.name+" "+user.surname) && password.elementsEqual(user.password)){
                 user.loggedIn = true
                 UserList.shared.sort()
-                performSegue(withIdentifier: "SigningInToUserList", sender: self)
+                performSegue(withIdentifier: "SignInToUserList", sender: self)
                 return
             }
         }
